@@ -35,6 +35,9 @@
         <a href="#prjct">PROJECTS</a>
       </nav>
       <a href="#ct" class="contactme">CONTACT ME</a>
+      <div class="hamburger">
+        <i class="fa-solid fa-bars"></i>
+      </div>
     </div>
     <section class="intro" id="home">
       <h1>
@@ -163,14 +166,30 @@
         </div>
         <div class="socials">
           <h3 class="conthead">SOCIAL NETWORKS :</h3>
-          <a href="https://www.linkedin.com/in/gauthams013/" target="_blank"><i class="fa-brands fa-linkedin-in" id="linkedin"></i></a>
-          <a href="https://www.instagram.com/gauthm_.s/" target="_blank"><i class="fa-brands fa-instagram" id="insta"></i></a>
+          <a href="https://www.linkedin.com/in/gauthams013/" target="_blank"
+            ><i class="fa-brands fa-linkedin-in" id="linkedin"></i
+          ></a>
+          <a href="https://www.instagram.com/gauthm_.s/" target="_blank"
+            ><i class="fa-brands fa-instagram" id="insta"></i
+          ></a>
         </div>
       </div>
     </section>
     <section class="copyr">
       <p>Created and developed by Gautham S</p>
     </section>
-    <a href="#top" class="backtotop"><i class="fa-solid fa-chevron-right fa-rotate-270"></i></a>
+    <a href="#top" class="backtotop"
+      ><i class="fa-solid fa-chevron-right fa-rotate-270"></i
+    ></a>
+
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navbar = document.querySelector(".navbar");
+    
+      hamburger.addEventListener("click", () => {
+        navbar.classList.toggle("active");
+      });
+    </script>
   </body>
 </html>

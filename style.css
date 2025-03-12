@@ -6,6 +6,18 @@
   font-weight: 400;
   font-style: normal;
 }
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Header */
 .header {
   display: flex;
   width: 100%;
@@ -14,18 +26,25 @@
   align-items: center;
   background-color: red;
 }
+
 .logo {
   border: 3px solid white;
   padding: 2px 15px;
   color: rgb(255, 244, 118);
   font-weight: 700;
-  transition: color ease;
-  transition: border ease;
+  transition: color ease, border ease;
 }
+
 .logo:hover {
   border: 3px solid black;
   color: black;
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+}
+
 .navbar a {
   font-size: 18px;
   color: white;
@@ -35,9 +54,11 @@
   border-bottom: 2px solid transparent;
   transition: color 200ms;
 }
+
 .navbar a:hover {
   color: black;
 }
+
 .contactme {
   padding: 5px 25px;
   background-color: rgb(255, 244, 118);
@@ -48,14 +69,18 @@
   font-weight: 800;
   font-size: 20px;
 }
+
 .contactme:hover {
   color: red;
 }
+
+/* Intro */
 .intro {
   background-color: red;
   padding: 30px 150px;
   padding-top: 150px;
 }
+
 .intro h1 {
   color: rgb(227, 227, 227);
   font-size: 180px;
@@ -64,6 +89,7 @@
   letter-spacing: -5px;
   line-height: 150px;
 }
+
 #code {
   color: rgb(255, 244, 118);
   font-weight: 700;
@@ -71,6 +97,7 @@
   text-align: justify;
   letter-spacing: -5px;
 }
+
 #arrow {
   color: black;
   text-align: end;
@@ -79,9 +106,12 @@
   top: -10px;
   transition: color 200ms;
 }
+
 #arrow:hover {
   color: white;
 }
+
+/* Subintro */
 .subintro {
   display: flex;
   flex-direction: column;
@@ -92,6 +122,7 @@
   padding-top: 120px;
   padding-bottom: 40px;
 }
+
 #subhead {
   text-align: justify;
   font-size: 28px;
@@ -100,6 +131,7 @@
   text-transform: uppercase;
   line-height: 30px;
 }
+
 #sublink {
   text-align: end;
   display: block;
@@ -113,24 +145,30 @@
   border-bottom: 3px solid rgb(227, 227, 227);
   transition: color ease;
 }
+
 #sublink:hover {
   border-bottom: 3px solid rgb(255, 244, 118);
   color: rgb(255, 244, 118);
 }
+
+/* About */
 .about {
   background-color: rgb(238, 238, 238);
   padding: 30px 175px;
 }
+
 .abt {
   border: 3px solid black;
   padding: 50px 50px;
   display: flex;
   align-items: center;
 }
+
 .abtcnt {
   width: 80%;
   padding-right: 50px;
 }
+
 .abt > img {
   width: 20%;
   border: 2px solid black;
@@ -138,30 +176,36 @@
   border-radius: 5px;
   transition: opacity 0.3s ease-in-out;
 }
+
 .abt > img:hover {
   opacity: 0.5;
 }
+
 #abttitle {
   font-size: 120px;
   font-weight: 700;
   color: red;
   padding-bottom: 80px;
 }
+
 #introtitle {
   font-size: 30px;
   font-weight: 600;
 }
+
 #introtitle > span {
   color: red;
   font-size: 40px;
   font-weight: 600;
 }
+
 .introcontent {
   padding-top: 20px;
   font-size: 20px;
   font-weight: 400;
   text-align: justify;
 }
+
 .cvdwnld > a {
   text-decoration: none;
   display: inline-block;
@@ -172,29 +216,36 @@
   transition: border-bottom 300ms;
   font-size: 18px;
 }
+
 .cvdwnld {
   margin-top: 50px;
   display: inline-block;
 }
+
 .cvdwnld > i {
   color: red;
 }
+
 .cvdwnld:hover {
   border-bottom: 2px solid black;
 }
+
 .cvdwnld:hover > a,
 .cvdwnld:hover > i {
   color: black;
 }
+
 #skilltitle {
   font-size: 50px;
   font-weight: 600;
   padding: 30px 0px;
 }
+
 .skillsec {
   display: flex;
   margin-bottom: 80px;
 }
+
 .skill {
   border: 2px solid rgb(248, 234, 82);
   background-color: rgb(255, 244, 118);
@@ -206,76 +257,90 @@
   font-size: 17px;
   border-radius: 40px;
   font-weight: 500;
-  transition: box-shadow 400ms;
-  transition: color ease;
+  transition: box-shadow 400ms, color ease;
 }
+
 .skill:hover {
   color: red;
   box-shadow: 0 0 10px red;
 }
+
+/* Education */
 .education {
   padding: 30px 175px;
   background-color: red;
 }
+
 #edutitle {
   font-size: 120px;
   font-weight: 700;
   color: rgb(227, 227, 227);
   padding-bottom: 80px;
 }
-.edusec{
+
+.edusec {
   padding-bottom: 80px;
   display: flex;
-  align-items:baseline;
+  align-items: baseline;
 }
-.edusec>i{
+
+.edusec > i {
   margin-right: 50px;
   font-size: 28px;
-  transition: color 200ms;
-  transition: font-size 400ms;
+  transition: color 200ms, font-size 400ms;
 }
-#school{
+
+#school {
   color: rgb(255, 244, 118);
   font-size: 33px;
   font-weight: 600;
   text-transform: uppercase;
 }
-#loc{
+
+#loc {
   color: rgb(227, 227, 227);
   font-size: 23px;
   font-weight: 500;
   text-transform: uppercase;
 }
-#degree{
+
+#degree {
   color: rgb(255, 244, 118);
   font-size: 26px;
   font-weight: 500;
   text-transform: uppercase;
 }
-#timeline{
+
+#timeline {
   color: rgb(227, 227, 227);
   font-size: 20px;
   font-weight: 500;
   text-transform: uppercase;
 }
-.ed{
+
+.ed {
   position: relative;
   bottom: 3px;
 }
-.edusec:hover >i{
+
+.edusec:hover > i {
   color: rgb(227, 227, 227);
   font-size: 20px;
 }
-.project{
+
+/* Projects */
+.project {
   padding: 30px 175px;
   background-color: rgb(238, 238, 238);
 }
+
 #projtitle {
   font-size: 120px;
   font-weight: 700;
   color: red;
   padding-bottom: 80px;
 }
+
 .polaroid {
   width: 670px;
   background-color: white;
@@ -287,16 +352,20 @@
   transform: rotate(-8deg);
   transition: transform 0.3s ease-in-out;
 }
+
 .polaroid:hover {
-  transform: rotate(0deg); /* Reset rotation on hover */
+  transform: rotate(0deg);
 }
+
 .container {
   padding: 20px 0px;
 }
+
 .polaroid > img {
   width: 650px;
   height: 450px;
 }
+
 .container > h3 {
   font-size: 22px;
   text-transform: uppercase;
@@ -306,53 +375,65 @@
   font-style: normal;
   letter-spacing: 1px;
 }
-.projsec{
+
+.projsec {
   display: flex;
   align-items: center;
   padding-bottom: 90px;
 }
-.projdesc{
+
+.projdesc {
   text-align: justify;
   font-size: 22px;
   margin-bottom: 30px;
 }
-.projsec>a{
+
+.projsec > a {
   text-decoration: none;
 }
-.projsec2{
+
+.projsec2 {
   padding-left: 100px;
 }
-.projsec2>a{
+
+.projsec2 > a {
   text-decoration: none;
   font-size: 25px;
   font-weight: 800;
   color: red;
   transition: font-size 0.5s ease-in-out;
 }
-.projsec2>a:hover{
+
+.projsec2 > a:hover {
   font-size: 38px;
 }
-.contact{
+
+/* Contact */
+.contact {
   padding: 30px 175px;
   background-color: black;
   padding-bottom: 100px;
 }
-#contitle{
+
+#contitle {
   font-size: 120px;
   font-weight: 700;
   color: red;
   padding-bottom: 80px;
 }
-.mail{
+
+.mail {
   display: flex;
   align-items: center;
 }
-.conthead{
+
+.conthead {
   color: rgb(227, 227, 227);
   font-size: 27px;
   font-weight: 600;
 }
-.mail i{
+
+.mail i {
   color: rgb(227, 227, 227);
   font-size: 18px;
   padding-right: 10px;
@@ -361,7 +442,8 @@
   margin-left: 203px;
   transition: color 0.2s ease-in-out;
 }
-.mail a{
+
+.mail a {
   text-decoration: none;
   color: rgb(227, 227, 227);
   font-size: 20px;
@@ -369,16 +451,19 @@
   bottom: 2px;
   transition: color 0.2s ease-in-out;
 }
-.mail:hover >a,
-.mail:hover >i{
+
+.mail:hover > a,
+.mail:hover > i {
   color: red;
 }
-.socials{
+
+.socials {
   margin-top: 40px;
   display: flex;
   align-items: center;
 }
-#linkedin{
+
+#linkedin {
   color: black;
   font-size: 20px;
   border-radius: 100%;
@@ -387,11 +472,10 @@
   padding: 8px;
   margin-right: 20px;
   margin-left: 40px;
-  transition: color 200ms;
-  transition: background-color 200ms;
-  transition: border 200ms;
+  transition: color 200ms, background-color 200ms, border 200ms;
 }
-#insta{
+
+#insta {
   color: black;
   font-size: 20px;
   border-radius: 100%;
@@ -399,23 +483,28 @@
   background-color: rgb(227, 227, 227);
   padding: 8px;
   font-weight: 800;
-  transition: color 200ms;
-  transition: background-color 200ms;
-  transition: border 200ms;
+  transition: color 200ms, background-color 200ms, border 200ms;
 }
-#insta:hover,#linkedin:hover{
+
+#insta:hover,
+#linkedin:hover {
   color: red;
   background-color: black;
   border: 2px solid red;
 }
-.copyr{
+
+/* Copyright */
+.copyr {
   background-color: rgb(31, 31, 31);
   padding: 5px 175px;
 }
-.copyr>p{
+
+.copyr > p {
   padding-left: 8px;
   color: rgb(227, 227, 227);
 }
+
+/* Back to Top */
 .backtotop {
   position: fixed;
   bottom: 20px;
@@ -430,16 +519,406 @@
   align-items: center;
   text-decoration: none;
   opacity: 0.6;
-  transition: opacity 0.3s;
-  transition: border 0.3s;
+  transition: opacity 0.3s, border 0.3s;
 }
+
 .backtotop:hover {
   opacity: 1;
   border: 1px solid black;
 }
-html{
+
+html {
   scroll-behavior: smooth;
 }
-::-webkit-scrollbar{
+
+::-webkit-scrollbar {
   display: none;
+}
+
+/* Hamburger Menu Icon (Hidden by Default) */
+.hamburger {
+  display: none;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Media Queries */
+
+/* Medium Screens (768px–1199px) */
+@media screen and (max-width: 1199px) {
+  .header {
+    padding: 20px 5%;
+  }
+
+  .navbar a {
+    font-size: 16px;
+    margin: 0 10px;
+  }
+
+  .contactme {
+    font-size: 18px;
+    padding: 5px 20px;
+  }
+
+  .intro {
+    padding: 20px 75px;
+    padding-top: 100px;
+  }
+
+  .intro h1,
+  #code {
+    font-size: 120px;
+    line-height: 100px;
+  }
+
+  #arrow {
+    left: 400px;
+  }
+
+  .subintro {
+    padding: 10px 150px;
+    padding-top: 80px;
+    padding-bottom: 30px;
+  }
+
+  #subhead,
+  #sublink {
+    font-size: 22px;
+  }
+
+  #sublink {
+    right: 200px;
+  }
+
+  .about,
+  .education,
+  .project,
+  .contact {
+    padding: 20px 75px;
+  }
+
+  #abttitle,
+  #edutitle,
+  #projtitle,
+  #contitle {
+    font-size: 80px;
+    padding-bottom: 50px;
+  }
+
+  .abt {
+    padding: 30px;
+  }
+
+  .abtcnt {
+    padding-right: 30px;
+  }
+
+  .abt > img {
+    height: 300px;
+  }
+
+  #introtitle {
+    font-size: 25px;
+  }
+
+  #introtitle > span {
+    font-size: 30px;
+  }
+
+  .introcontent {
+    font-size: 18px;
+  }
+
+  .cvdwnld > a {
+    font-size: 16px;
+  }
+
+  #skilltitle {
+    font-size: 40px;
+  }
+
+  .skill {
+    font-size: 15px;
+    padding: 15px;
+    margin-right: 20px;
+  }
+
+  #school {
+    font-size: 28px;
+  }
+
+  #loc {
+    font-size: 20px;
+  }
+
+  #degree {
+    font-size: 22px;
+  }
+
+  #timeline {
+    font-size: 18px;
+  }
+
+  .edusec > i {
+    margin-right: 30px;
+    font-size: 24px;
+  }
+
+  .polaroid {
+    width: 500px;
+  }
+
+  .polaroid > img {
+    width: 480px;
+    height: 350px;
+  }
+
+  .projdesc {
+    font-size: 18px;
+  }
+
+  .projsec2 {
+    padding-left: 50px;
+  }
+
+  .conthead {
+    font-size: 24px;
+  }
+
+  .mail i {
+    margin-left: 150px;
+  }
+
+  .mail a {
+    font-size: 18px;
+  }
+
+  .copyr {
+    padding: 5px 75px;
+  }
+}
+
+/* Small Screens (≤767px) */
+@media screen and (max-width: 767px) {
+  /* Hamburger Menu */
+  .hamburger {
+    display: block;
+  }
+
+  .navbar {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: red;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+
+  .contactme {
+    display: none; /* Hide on small screens, can be added to hamburger menu if needed */
+  }
+
+  .header {
+    padding: 15px 5%;
+  }
+
+  .intro {
+    padding: 15px 30px;
+    padding-top: 50px;
+  }
+
+  .intro h1,
+  #code {
+    font-size: 60px;
+    line-height: 50px;
+  }
+
+  #arrow {
+    left: 200px;
+    font-size: 20px;
+  }
+
+  .subintro {
+    padding: 10px 30px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    align-items: center;
+  }
+
+  #subhead,
+  #sublink {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  #sublink {
+    right: 0;
+    bottom: 0;
+  }
+
+  .about,
+  .education,
+  .project,
+  .contact {
+    padding: 15px 30px;
+  }
+
+  #abttitle,
+  #edutitle,
+  #projtitle,
+  #contitle {
+    font-size: 50px;
+    padding-bottom: 30px;
+  }
+
+  .abt {
+    flex-direction: column;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .abtcnt {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .abt > img {
+    width: 100%;
+    height: auto;
+  }
+
+  #introtitle {
+    font-size: 20px;
+  }
+
+  #introtitle > span {
+    font-size: 25px;
+  }
+
+  .introcontent {
+    font-size: 16px;
+  }
+
+  .cvdwnld > a {
+    font-size: 14px;
+  }
+
+  #skilltitle {
+    font-size: 30px;
+  }
+
+  .skillsec {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .skill {
+    font-size: 14px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  #school {
+    font-size: 22px;
+  }
+
+  #loc {
+    font-size: 18px;
+  }
+
+  #degree {
+    font-size: 18px;
+  }
+
+  #timeline {
+    font-size: 16px;
+  }
+
+  .edusec > i {
+    margin-right: 20px;
+    font-size: 20px;
+  }
+
+  .projsec {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px;
+  }
+
+  .polaroid {
+    width: 100%;
+    transform: none; /* Remove rotation on small screens */
+  }
+
+  .polaroid > img {
+    width: 100%;
+    height: auto;
+  }
+
+  .projsec2 {
+    padding-left: 0;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .projdesc {
+    font-size: 16px;
+  }
+
+  .conthead {
+    font-size: 20px;
+  }
+
+  .mail {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .mail i {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .mail a {
+    font-size: 16px;
+  }
+
+  .socials {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #linkedin,
+  #insta {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
+  .copyr {
+    padding: 5px 30px;
+  }
+
+  .copyr > p {
+    font-size: 14px;
+  }
+
+  .backtotop {
+    width: 40px;
+    height: 40px;
+    font-size: 14px;
+  }
 }
